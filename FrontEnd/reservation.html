@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant Reservation</title>
+
+    <link rel="stylesheet" href="dist/bundle.css">
+    <!-- <script src="src/javascript/index.js"></script> -->
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="head-container1">
+        <div id="phone">
+            <b><span class="fa mr-2 fa-phone color-change"></span>(91)9956800000</b>
+        </div>
+        <div class="vertical-line">
+        </div>
+        <div class="mail">
+            <b><span class="fa mr-2 fa-envelope color-change"></span> contactus_sona@gmail.com</b>
+        </div>
+        <div class="vertical-line">
+        </div>
+        <div class="social-media">
+            <span class="fa fa-facebook space"></span>
+            <span class="fa fa-twitter space"></span>
+            <span class="fa fa-instagram space"></span>
+            <span class="fa fa-firefox space"></span>
+        </div>
+        <div class="button1">
+            <button class="btn1" id="logout">LOGOUT</button>
+        </div>
+        <div class="flag">
+            <img src="src/images/flag.jpg" class="image1">
+        </div>
+        <div class="language">
+            <select>
+                <option>EN</option>
+                <option>AR</option>
+                <option>AY</option>
+                <option>HN</option>
+                <option>HS</option>
+            </select>
+        </div>
+    </div>
+    <hr class="hr-change">
+    <div class="head-container2">
+        <img src="src/images/logo.png" class="logo">
+        <div class="navigation">
+            <div class="menu">
+                <ul>
+                    <li class="list">Home</li>
+                    <li class="list">Reservation</li>
+                    <li class="list">About Us</li>
+                    <li class="list">Menu</li>
+                    <li class="list">Login</li>
+                    <li class="list">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="search">
+            <span class="fa fa-search search-button"></span>
+        </div>
+    </div>
+    <button id="viewOrder" style="display: none;"></button>
+    <!-- <div class="body_container">
+        <div class="body_container_wrapper">
+            <h1>Sona Restaurant</h1>
+            <p>Book your reservations at Sona and enjoy our luxurious restaurant. You can also order from the comfort of
+                your home.</p>
+            <a href="#">DISCOVER NOW</a>
+        </div> -->
+    <section class="resSection">
+        <div class="form-style-10">
+            <h1>Make Reservation!<span>Make your reservation and enjoy our services!</span></h1>
+            
+                <div class="section"><span>1</span>Reservation Date</div>
+                <div class="inner-wrap">
+                    <label>Reservation Date<input type="date" name="check-in-date" id="check-in-date"></label>
+        
+                </div>
+            
+                <div class="section"><span>2</span>Reservation Time</div>
+                <div class="inner-wrap">
+                    <select name="cars" id="cars">
+                        <option value="20:00">8PM</option>
+                        <option value="21:00">9PM</option>
+                        <option value="22:00">10PM</option>
+                        <option value="23:00">11PM</option>
+                    </select>
+                </div>
+            
+                <div class="section"><span>3</span>Number Of Guests</div>
+                    <div class="inner-wrap">
+                        <select id="Guests">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                <div class="section"><span>4</span>Tables</div>
+                <div class="inner-wrap">
+                    <select id="Tables">
+                        <option value="601830a12e044b3978aa1ba6">Table 1(2 Guests)</option>
+                        <option value="60229dcf3200251b6cbf58fa">Table 2(4 Guests)</option>
+                        <option value="60229dda3200251b6cbf58fb">Table 3(6 Guests)</option>
+                        <option value="60229de03200251b6cbf58fc">Table 4(8 Guests)</option>
+                        <option value="60229de33200251b6cbf58fd">Table 5(10 Guests)</option>
+                    </select>
+                </div>
+                <div class="button-section">
+                    <button id="makeres">MAKE RESERVATION</button>
+                    <button id="viewres">VIEW RESERVATION</button>
+                
+                 </span>
+                </div>
+            
+            </div>
+        <section>
+            <div id="ViewReservations"></div>
+        </section>
+        <button id="Login" style="display: none;">Login</button>
+        
+        <button id="addTablebtn">Add table</button>
+        <button id="SignUp" style="display: none;">SignUp</button>
+        <script src="dist/bundle.js"></script>
+       
+</body>
+
+</html>

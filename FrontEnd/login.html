@@ -1,0 +1,216 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Restaurant Reservation</title>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.css' rel='stylesheet' />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.0/mapbox-gl.js"></script>
+
+    <link rel="stylesheet" href="dist/bundle.css">
+    <!-- <script src="src/javascript/index.js"></script> -->
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="head-container1">
+        <div id="phone">
+            <b><span class="fa mr-2 fa-phone color-change"></span>(91)9956800000</b>
+        </div>
+        <div class="vertical-line">
+        </div>
+        <div class="mail">
+            <b><span class="fa mr-2 fa-envelope color-change"></span> contactus_sona@gmail.com</b>
+        </div>
+        <div class="vertical-line">
+        </div>
+        <div class="social-media">
+            <span class="fa fa-facebook space"></span>
+            <span class="fa fa-twitter space"></span>
+            <span class="fa fa-instagram space"></span>
+            <span class="fa fa-firefox space"></span>
+        </div>
+        <div class="button1">
+            <button class="btn1" id="logout">LOGOUT</button>
+        </div>
+        <div class="flag">
+            <img src="src/images/flag.jpg" class="image1">
+        </div>
+        <div class="language">
+            <select>
+                <option>EN</option>
+                <option>AR</option>
+                <option>AY</option>
+                <option>HN</option>
+                <option>HS</option>
+            </select>
+        </div>
+    </div>
+    <hr class="hr-change">
+    <div class="head-container2">
+        <img src="src/images/logo.png" class="logo">
+        <div class="navigation">
+            <div class="menu">
+                <ul>
+                    <li class="list">Home</li>
+                    <a href="./reservation.html">
+                        <li class="list">Reservation</li>
+                    </a>
+                    <a href="./aboutus.html">
+                        <li class="list">About Us</li>
+                    </a>
+                    <a href="./menu.html">
+                        <li class="list">Menu</li>
+                    </a>
+                    <li class="list">Login</li>
+                    <li class="list">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="search">
+            <span class="fa fa-search search-button"></span>
+        </div>
+    </div>
+    <section class="resSection">
+        <div class="form-style-10">
+            <h1>LOGIN<span>Login to enjoy our services!</span></h1>
+
+            <div class="section"><span>1</span>Email</div>
+            <div class="inner-wrap">
+                <label>Email
+                    <input type="email" name="Email id" id="email_id"></label>
+
+            </div>
+
+            <div class="section"><span>2</span>Password</div>
+            <div class="inner-wrap">
+                <label>Password
+                    <input type="password" name="password" id="password"></label>
+
+            </div>
+
+            <div class="button-section">
+                <button id="Login">Login</button>
+
+
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="form-style-10">
+            <h1>Sign Up<span>Not a member? Sign Up</span></h1>
+
+            <div class="section"><span>1</span>name</div>
+            <div class="inner-wrap">
+                <label>Name
+                    <input type="text" name="name" id="nameSign"></label>
+
+            <div class="section"><span>1</span>Email</div>
+            <div class="inner-wrap">
+                <label>Email
+                    <input type="email" name="Email id" id="email_idSign"></label>
+
+            </div>
+
+            <div class="section"><span>2</span>Password</div>
+            <div class="inner-wrap">
+                <label>Password
+                    <input type="password" name="password" id="passwordSign"></label>
+
+            </div>
+
+            <div class="button-section">
+                <button id="SignUp">SignUp</button>
+
+
+                </span>
+            </div>
+
+        </div>
+
+        <!-- <button id="logout">Logout</button> -->
+    </section>
+    <button id="viewOrder" style="display: none;">View Cart</button>
+    <button id="makeres" style="display: none;">MAKE RESERVATION</button>
+    <button id="viewres" style="display: none;">VIEW RESERVATION</button>
+    <button id="addTablebtn" style="display: none;">Add table</button>
+    <div id="mapUse" style="display: none;"></div>
+    <!-- <section class="resSection">
+            <div class="form-style-10">
+                <h1>Make Reservation!<span>Make your reservation and enjoy our services!</span></h1>
+
+                <div class="section"><span>1</span>Email</div>
+                <div class="inner-wrap">
+                    <label>Email
+                        <input type="email" name="Email id" id="email_id"></label>
+
+                </div>
+
+                <div class="section"><span>2</span>Password</div>
+                <div class="inner-wrap">
+                    <label>Password
+                        <input type="password" name="password" id="password"></label>
+
+                </div>
+
+                <div class="button-section">
+                    <button id="SignUp">SignUp</button>
+
+
+                    </span>
+                </div>
+
+            </div>
+    </section> -->
+    <script src="dist/bundle.js"></script>
+</body>
+<footer>
+    <div class="footer">
+        <div class="footer-all">
+            <div class="footer1">
+                <img src="src/images/footer-logo.png">
+                <p>We provide luxurious restaurant facilities with delicious cuisines</p>
+                <span class="fa fa-facebook-f circle"></span>
+                <span class="fa fa-twitter circle"></span>
+                <span class="fa fa-firefox circle"></span>
+                <span class="fa fa-instagram circle"></span>
+                <span class="fa fa-youtube-play circle"></span>
+            </div>
+            <div class="contact-us">
+                <h2>CONTACT US</h2>
+                <p>(91)9956800000</p>
+                <p>contactus_sona@gmail.com</p>
+                <p>Trichy Street</p>
+                <p>Chennai</p>
+            </div>
+            <div class="latest-news">
+                <h2>LATEST NEWS</h2>
+                <p>Get the latest Updates and Offers</p>
+                <input type="email" type="email" placeholder="EMAIL" class="mail-id">
+                <span class="fa fa-arrow-circle-right arrow"></span>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="para">
+                <p>Contact</p>
+                <p>Terms Of Use</p>
+                <p>Privacy</p>
+                <p>Environment Policy</p>
+            </div>
+            <div class="copyright">
+                <p>Copyright</p>
+                <span class="fa fa-copyright copy"></span>
+                <p>All rights reserved | This template si made with</p>
+                <span class="fa fa-heart heart"></span><br>
+                <h5>by</h5>
+                <h4>Colorlib</h4>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</html>
